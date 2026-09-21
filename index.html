@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aneezay's | Pakistani Women's Fashion</title>
+  <meta name="description" content="Aneezay's — elegant Pakistani fashion, bridal, festive, lawn and everyday wear.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="navbar">
+  <a href="#home" class="logo">Aneezay's<span>PAKISTANI FASHION</span></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="bag-btn" onclick="openCart()">Bag (<span id="bagCount">0</span>)</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">ELEGANCE • TRADITION • GRACE</p>
+    <h1>Aneezay's<br><em>Collection</em></h1>
+    <p class="hero-text">Discover elegant Pakistani fashion designed for celebrations, traditions and everyday moments.</p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn btn-primary">SHOP COLLECTION</a>
+      <a href="#about" class="btn btn-outline">OUR STORY</a>
+    </div>
+  </div>
+</section>
+
+<section id="collections">
+  <div class="section-title">
+    <p>EXPLORE</p>
+    <h2>Our Collections</h2>
+  </div>
+  <div class="categories">
+    <a href="#products" class="category category-lawn"><div><h3>Lawn</h3><span>Everyday Elegance</span></div></a>
+    <a href="#products" class="category category-bridal"><div><h3>Bridal</h3><span>For Your Special Day</span></div></a>
+    <a href="#products" class="category category-fancy"><div><h3>Fancy</h3><span>Festive Looks</span></div></a>
+    <a href="#products" class="category category-casual"><div><h3>Casual</h3><span>Soft & Timeless</span></div></a>
+  </div>
+</section>
+
+<section id="products" class="shop-section">
+  <div class="section-title">
+    <p>SHOP</p>
+    <h2>Featured Collection</h2>
+  </div>
+
+  <div class="products">
+
+    <article class="product">
+      <div class="product-image"><img src="IMG-20260903-WA0004.jpg" alt="Noor Lawn Set"></div>
+      <div class="product-info"><span class="product-category">Casual</span><h3>Noor Lawn Set</h3><p class="price">PKR 4,290</p><button class="add-btn" onclick="addToBag('Noor Lawn Set',4290)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product2.jpg" alt="Mehfil Embroidered"></div>
+      <div class="product-info"><span class="product-category">Fancy</span><h3>Mehfil Embroidered</h3><p class="price">PKR 8,990</p><button class="add-btn" onclick="addToBag('Mehfil Embroidered',8990)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="range-bahar.jpg" alt="Rang-e-Bahar"></div>
+      <div class="product-info"><span class="product-category">Traditional</span><h3>Rang-e-Bahar</h3><p class="price">PKR 7,490</p><button class="add-btn" onclick="addToBag('Rang-e-Bahar',7490)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product4.jpg" alt="Rosé Co-ord"></div>
+      <div class="product-info"><span class="product-category">Casual</span><h3>Rosé Co-ord</h3><p class="price">PKR 5,190</p><button class="add-btn" onclick="addToBag('Rosé Co-ord',5190)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product5.jpg" alt="Zarqa Festive"></div>
+      <div class="product-info"><span class="product-category">Fancy</span><h3>Zarqa Festive</h3><p class="price">PKR 10,990</p><button class="add-btn" onclick="addToBag('Zarqa Festive',10990)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product6.jpg" alt="Ivory Kurta"></div>
+      <div class="product-info"><span class="product-category">Traditional</span><h3>Ivory Kurta</h3><p class="price">PKR 3,990</p><button class="add-btn" onclick="addToBag('Ivory Kurta',3990)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product7.jpg" alt="Sahar Set"></div>
+      <div class="product-info"><span class="product-category">Casual</span><h3>Sahar Set</h3><p class="price">PKR 4,590</p><button class="add-btn" onclick="addToBag('Sahar Set',4590)">ADD TO BAG</button></div>
+    </article>
+
+    <article class="product">
+      <div class="product-image"><img src="product8.jpg" alt="Gulabo Luxe"></div>
+      <div class="product-info"><span class="product-category">Luxury</span><h3>Gulabo Luxe</h3><p class="price">Contact for Price</p><button class="add-btn" onclick="orderWhatsApp('Gulabo Luxe')">ORDER NOW</button></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-brand"><h2>Aneezay's</h2><p>EST. WITH LOVE</p></div>
+    <div class="about-text">
+      <p class="eyebrow">OUR STORY</p>
+      <h2>Where Tradition Meets Elegance</h2>
+      <p>Aneezay's brings together the beauty of Pakistani tradition and modern elegance. From graceful everyday pieces to festive and bridal looks, every collection is selected with style and timeless beauty in mind.</p>
+      <p>Have a bridal or festive reference picture? Send it to us and discuss your desired outfit with Aneezay's.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title"><p>SIMPLE & EASY</p><h2>How To Order</h2></div>
+  <div class="process">
+    <div class="step"><span>01</span><h3>Choose</h3><p>Select your favourite dress.</p></div>
+    <div class="step"><span>02</span><h3>Add To Bag</h3><p>Add your selected items to your bag.</p></div>
+    <div class="step"><span>03</span><h3>Send Details</h3><p>Share your customer and delivery details.</p></div>
+    <div class="step"><span>04</span><h3>Delivery</h3><p>We confirm your order and arrange delivery.</p></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <p class="eyebrow">YOUR DREAM DRESS</p>
+  <h2>Have a Reference Picture?</h2>
+  <p>Send us your bridal or festive dress reference picture on WhatsApp and discuss your desired look.</p>
+  <a href="https://wa.me/923009482932?text=Hi%20Aneezay's,%20I%20want%20to%20discuss%20a%20dress." target="_blank" class="whatsapp-btn">MESSAGE ON WHATSAPP</a>
+</section>
+
+<section class="faq-section">
+  <div class="section-title"><p>NEED HELP?</p><h2>Frequently Asked Questions</h2></div>
+  <div class="faq">
+    <details><summary>Can I order through WhatsApp?</summary><p>Yes. Select your dress and contact Aneezay's through WhatsApp to place your order.</p></details>
+    <details><summary>Can I send a reference picture?</summary><p>Yes. You can send a bridal or festive reference picture and discuss your desired outfit with us.</p></details>
+    <details><summary>Do you provide delivery?</summary><p>Delivery details can be confirmed when your order is placed.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">Aneezay's</div><p>Elegant Pakistani fashion for every beautiful moment.</p></div>
+    <div><h4>QUICK LINKS</h4><a href="#home">Home</a><a href="#collections">Collections</a><a href="#products">Shop</a><a href="#about">About</a></div>
+    <div><h4>CONTACT</h4><a href="https://wa.me/923009482932" target="_blank">WhatsApp</a><a href="mailto:aneezaybrand@gmail.com">aneezaybrand@gmail.com</a></div>
+  </div>
+  <div class="copyright">© 2026 Aneezay's. All Rights Reserved.</div>
+</footer>
+
+<aside class="cart" id="cart">
+  <div class="cart-header"><h2>Your Bag</h2><button class="close-cart" onclick="closeCart()">×</button></div>
+  <div class="cart-items" id="cartItems"><p class="empty-bag">Your bag is empty.</p></div>
+  <button class="checkout" onclick="checkout()">ORDER VIA WHATSAPP</button>
+</aside>
+
+<script>
+let bag = [];
+
+function addToBag(name, price) {
+  bag.push({name, price});
+  document.getElementById("bagCount").textContent = bag.length;
+  updateCart();
+  openCart();
+}
+
+function updateCart() {
+  const cartItems = document.getElementById("cartItems");
+  if (!bag.length) {
+    cartItems.innerHTML = '<p class="empty-bag">Your bag is empty.</p>';
+    return;
+  }
+
+  cartItems.innerHTML = bag.map((item, index) => `
+    <div class="cart-item">
+      <div><strong>${item.name}</strong><br>PKR ${item.price.toLocaleString()}</div>
+      <button onclick="removeItem(${index})">Remove</button>
+    </div>
+  `).join("");
+}
+
+function removeItem(index) {
+  bag.splice(index, 1);
+  document.getElementById("bagCount").textContent = bag.length;
+  updateCart();
+}
+
+function openCart() {
+  document.getElementById("cart").classList.add("open");
+}
+
+function closeCart() {
+  document.getElementById("cart").classList.remove("open");
+}
+
+function checkout() {
+  if (!bag.length) {
+    alert("Your bag is empty.");
+    return;
+  }
+
+  let message = "Hi Aneezay's! I want to place an order:\n\n";
+  bag.forEach(item => {
+    message += `• ${item.name} - PKR ${item.price.toLocaleString()}\n`;
+  });
+  message += "\nPlease share the next steps for delivery.";
+
+  window.open(
+    "https://wa.me/923009482932?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
+
+function orderWhatsApp(product) {
+  const message = `Hi Aneezay's! I want to order: ${product}`;
+  window.open(
+    "https://wa.me/923009482932?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
